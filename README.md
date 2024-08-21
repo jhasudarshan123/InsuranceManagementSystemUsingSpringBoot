@@ -19,8 +19,8 @@ This project is a backend-only insurance management system built using Spring Bo
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
-- [Java 11+](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
-- [Maven 3.6+](https://maven.apache.org/download.cgi)
+- [Java 8+](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
+- [Maven 2.3+](https://maven.apache.org/download.cgi)
 - [Git](https://git-scm.com/)
 - A preferred IDE (e.g., IntelliJ IDEA, Eclipse)
 
