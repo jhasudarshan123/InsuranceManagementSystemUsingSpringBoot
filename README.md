@@ -112,7 +112,6 @@ The database schema consists of the following key tables:
 - **Customer:** Stores customer details like name, contact information, and address.
 - **Policy:** Stores policy information such as type, coverage amount, and premium.
 - **Claim:** Stores claims filed against policies, including status and payout.
-- **Agent:** Stores agent information and their associated customers.
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
@@ -122,5 +121,3 @@ Contributions are welcome! Please follow these steps to contribute:
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Create a pull request.
 ```
-
-This README assumes the typical features you might implement in an insurance system. Adjust it based on your project specifics, including adding more details, features, or customizing API documentation.
