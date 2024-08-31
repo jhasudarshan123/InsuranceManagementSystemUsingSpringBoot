@@ -16,5 +16,8 @@ public interface PolicyRepository extends CrudRepository<Policy, Integer> {
 	
 	@Query(nativeQuery = true, value = "SELECT * FROM policy WHERE id = :id")
 	public List<Policy> getAllPoliciesById(@Param("id") int id);
+	
+	@Query(nativeQuery = true, value = "SELECT * FROM policy WHERE id = :id")
+	public Policy getPoliciesById(@Param("id") int id);
 
 }

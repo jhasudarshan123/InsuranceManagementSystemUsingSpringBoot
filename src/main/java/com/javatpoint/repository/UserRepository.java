@@ -1,13 +1,17 @@
 package com.javatpoint.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import java.util.Optional;
 
-import com.javatpoint.DTO.UserDto;
-import com.javatpoint.model.Customers;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
 import com.javatpoint.model.User;
 
-public interface UserRepository extends CrudRepository<User, Long> {
-	User findByUsername(String username);
-	User save(UserDto userDto);
+@Repository
+public interface UserRepository extends CrudRepository<User, Integer> {
+	Optional<User> findOneByEmailAndPassword(String email,String password);
+	User findByEmail(String email);
+	
+	
 
 }

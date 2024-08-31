@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.javatpoint.model.Claim;
+import com.javatpoint.model.Policy;
 import com.javatpoint.repository.ClaimRepository;
 @Service
 public class ClaimService {
@@ -21,5 +22,11 @@ public class ClaimService {
 	public void saveOrUpdateClaim(Claim claims) {
 		claimRepository.save(claims);
 	}
+	
+	public Claim getClaimaById( int id) {
+		return claimRepository.getClaimsById(id);
+	}
+	
+	
 
 }

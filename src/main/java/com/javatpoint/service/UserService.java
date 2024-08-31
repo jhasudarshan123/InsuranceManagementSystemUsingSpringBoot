@@ -1,10 +1,13 @@
 package com.javatpoint.service;
 
-import com.javatpoint.DTO.UserDto;
-import com.javatpoint.model.User;
+import com.javatpoint.DTO.LoginDTO;
+import com.javatpoint.DTO.UserDTO;
+import com.javatpoint.model.LoginMessage;
 
 public interface UserService {
-	User findByUsername(String username);
-	User save(UserDto userDto);
+	
+	LoginMessage addUser(UserDTO userdto);
+	LoginMessage loginUser(LoginDTO logindto);
+	
 
 }

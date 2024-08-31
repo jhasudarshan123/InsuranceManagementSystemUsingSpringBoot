@@ -23,5 +23,11 @@ public class PolicyService {
 	public void saveOrUpdatePolicy(Policy policy) {
 		policyRepository.save(policy);
 	}
+	
+	public Policy getPoliciesById(int id) {
+		return policyRepository.getPoliciesById(id);
+	}
+
+	
 
 }
